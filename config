@@ -136,6 +136,9 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+#bindsym $mod+ctrl+left workspace prev
+#bindsym $mod+ctrl+right workspace next
+
 bindsym $mod+ctrl+1 move workspace to output HDMI-0
 bindsym $mod+ctrl+2 move workspace to output DP-2
 bindsym $mod+ctrl+3 move workspace to output DP-2.1.1
@@ -177,7 +180,7 @@ new_window 1pixel
 # finds out, if available)
 bar {
         #status_command i3status
-	status_command /opt/bumblebee-status/bumblebee-status -t solarized-powerline -m title weather load amixer nic battery datetime -p battery.device=BAT0
+	status_command /opt/bumblebee-status/bumblebee-status -t solarized-powerline -m title apt xrandr weather load amixer nic battery datetime -p battery.device=BAT0
 	font pango:Inconsolata 10
 	#font Inconsolata:PowerlineFont 10
         #tray_output primary
